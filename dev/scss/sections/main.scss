@@ -1,0 +1,16 @@
+.section-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	padding: 5%;
+	color: #444;
+
+	.advantages,
+	.promo {
+		max-width: 720px;
+	}
+	.advantages {
+		margin-top: 80px;
+	}
+}
