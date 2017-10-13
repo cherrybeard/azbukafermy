@@ -13,5 +13,14 @@
 
 	form {
 		margin-top: 28px;
+		display: flex;
+	}
+
+	.text-input {
+		width: 300px;
+	}
+
+	.button-primary {
+		margin-left: -40px;
 	}
 }

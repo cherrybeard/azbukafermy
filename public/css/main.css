@@ -11,6 +11,9 @@ textarea {
   font-family: inherit;
   outline: none; }
 
+button {
+  border: none; }
+
 html {
   font-family: 'Tahoma', sans-serif; }
 
@@ -24,6 +27,28 @@ body {
     width: 33%; }
   body .section-main {
     width: 66%; }
+
+.button-primary {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #628F56;
+  color: white;
+  line-height: 42px;
+  border-radius: 22px;
+  padding: 2px 44px 0; }
+
+.text-input {
+  border: 2px solid #AAA;
+  padding: 7px 20px 9px;
+  border-radius: 22px; }
+  .text-input input[type=text] {
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    width: 100%; }
 
 .logo {
   font-size: 0;
@@ -66,7 +91,14 @@ body {
     color: black;
     margin-bottom: 8px; }
   .promo form {
-    margin-top: 28px; }
+    margin-top: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .promo .text-input {
+    width: 300px; }
+  .promo .button-primary {
+    margin-left: -40px; }
 
 .advantages {
   display: -ms-grid;
