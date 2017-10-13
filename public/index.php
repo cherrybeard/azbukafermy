@@ -12,7 +12,7 @@
 		}
 		$title = 'Заявка с заглушки Азбука Фермы #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'stephen.gusev@gmail.com';
+    $to = 'pavlova@blackstonekeeping.com';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			"From: AzbukaFermy <hi@azbukafermy.ru>\n";
@@ -31,8 +31,15 @@
   </head>
   <body>
     <div class="section-side">
-      <h1 class="logo">Азбука фермы</h1>
-      <div class="countdown"><span>Осталось</span> <strong>23</strong> <span>торговых места</span>
+      <div class="about">
+        <h1 class="logo">Азбука фермы</h1>
+        <address class="address">
+          <p>ТРЦ «Золотой Вавилон»</p>
+          <p>Москва, Проспект Мира, 211, к. 2, этаж 1</p>
+          <p>+7 963 680 4997</p>
+        </address>
+      </div>
+      <div class="countdown"><span>Осталось</span> <strong id="data-countdown" countdown="80"></strong> <span>торговых места</span>
       </div>
     </div>
     <div class="section-main">
@@ -45,6 +52,7 @@
           </div>
           <button type="submit" class="button-primary">Забронировать</button>
         </form>
+        <p class="small">Мы перезвоним и расскажем подробнее</p>
       </div>
       <ul class="advantages">
         <li class="advantages-price">От 30 000 руб. в месяц за торговое место под ключ</li>

@@ -83,6 +83,8 @@ body {
     font-size: 6em;
     font-weight: 700;
     line-height: 1.1; }
+    .countdown strong::before {
+      content: attr(countdown); }
   .countdown span {
     text-transform: uppercase;
     letter-spacing: 0.1em; }
@@ -108,6 +110,10 @@ body {
     margin-left: -40px;
     position: relative;
     z-index: 1; }
+  .promo .small {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px; }
 
 .advantages {
   display: -ms-grid;
@@ -187,6 +193,25 @@ body {
   background: black url(../img/sections/side/bg.jpg) center/cover no-repeat;
   color: white;
   padding: 4% 5%; }
+  .section-side .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section-side .address {
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.6;
+    line-height: 1.5; }
 
 .section-main {
   display: -webkit-box;

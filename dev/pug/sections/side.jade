@@ -1,8 +1,15 @@
 .section-side
-	h1.logo Азбука фермы
+	.about
+		h1.logo Азбука фермы
+		
+		address.address
+			p ТРЦ «Золотой Вавилон»
+			p Москва, Проспект Мира, 211, к. 2, этаж 1
+			p +7 963 680 4997
+			
 	.countdown
 		span Осталось
 		= " "
-		strong 23
+		strong#data-countdown(countdown="80")
 		= " "
 		span торговых места
