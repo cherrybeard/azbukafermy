@@ -6,12 +6,31 @@ body {
 	display: flex;
 	height: 100%;
 	height: 100vh;
+	min-height: 740px;
 
+	.section-side,
+	.section-main {
+		box-sizing: border-box;
+	}
 	.section-side {
 		width: 33%;
 	}
 
 	.section-main {
 		width: 66%;
+	}
+}
+
+@include mq("tablet-wide", max) {
+	body {
+		flex-direction: column;
+		height: auto;
+
+		.section-side {
+			width: 100%;
+		}
+		.section-main {
+			width: 100%;
+		}
 	}
 }

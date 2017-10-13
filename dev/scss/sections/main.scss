@@ -15,3 +15,15 @@
 		margin-top: 80px;
 	}
 }
+
+@include mq("tablet-wide", max) {
+	.section-main {
+		align-items: center;
+	}
+}
+
+@include mq("phablet", max) {
+	.section-main {
+		padding-top: 80px;
+	}
+}

@@ -23,3 +23,21 @@
 		line-height: 1.5;
 	}
 }
+
+@include mq("tablet-wide", max) {
+	.section-side {
+		flex-direction: row;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+}
+
+@include mq("phablet", max) {
+	.section-side {
+		flex-direction: column;
+
+		.about {
+			margin-bottom: 60px;
+		}
+	}
+}
