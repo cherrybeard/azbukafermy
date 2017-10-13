@@ -49,6 +49,13 @@ body {
     line-height: 20px;
     border: none;
     width: 100%; }
+  .text-input.hidden {
+    display: none; }
+  .text-input.error {
+    border-color: #628F56; }
+  .text-input.disabled {
+    pointer-events: none;
+    opacity: 0.2; }
 
 .logo {
   font-size: 0;
@@ -98,7 +105,9 @@ body {
   .promo .text-input {
     width: 300px; }
   .promo .button-primary {
-    margin-left: -40px; }
+    margin-left: -40px;
+    position: relative;
+    z-index: 1; }
 
 .advantages {
   display: -ms-grid;

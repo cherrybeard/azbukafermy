@@ -9,4 +9,17 @@
 		border: none;
 		width: 100%;
 	}
+
+	&.hidden {
+		display: none;
+	}
+
+	&.error {
+		border-color: #628F56;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.2;
+	}
 }
