@@ -5,4 +5,12 @@ html {
 body {
 	display: flex;
 	height: 100vh;
+
+	.section-side {
+		width: 33%;
+	}
+
+	.seciton-main {
+		width: 66%;
+	}
 }
