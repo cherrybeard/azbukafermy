@@ -154,6 +154,67 @@ body {
     .promo .text-input {
       width: 90%;
       box-sizing: border-box; } }
+.advantages li {
+  width: 33%;
+  padding-top: 60px;
+  max-width: 200px;
+  position: relative; }
+  .advantages li:not(:nth-last-child(-n+3)) {
+    margin-bottom: 40px; }
+  .advantages li::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .advantages li.advantages-price::before {
+    background-image: url("../img/sections/main/advantages/price.svg");
+    width: 108px;
+    height: 19px; }
+  .advantages li.advantages-search::before {
+    background-image: url("../img/sections/main/advantages/search.svg");
+    width: 34px;
+    height: 34px; }
+  .advantages li.advantages-place::before {
+    background-image: url("../img/sections/main/advantages/place.svg");
+    width: 27px;
+    height: 38px; }
+  .advantages li.advantages-identity::before {
+    background-image: url("../img/sections/main/advantages/identity.svg");
+    width: 42px;
+    height: 42px; }
+  .advantages li.advantages-delay::before {
+    background-image: url("../img/sections/main/advantages/delay.svg");
+    width: 27px;
+    height: 41px; }
+  .advantages li.advantages-storage::before {
+    background-image: url("../img/sections/main/advantages/storage.svg");
+    width: 32px;
+    height: 32px; }
+  .advantages li.advantages-ads::before {
+    background-image: url("../img/sections/main/advantages/ads.svg");
+    width: 40px;
+    height: 30px; }
+  .advantages li.advantages-design::before {
+    background-image: url("../img/sections/main/advantages/design.svg");
+    width: 41px;
+    height: 34px; }
+  .advantages li.advantages-ready::before {
+    background-image: url("../img/sections/main/advantages/ready.svg");
+    width: 39px;
+    height: 39px; }
+  @media screen and (max-width: 559px) {
+    .advantages li {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 45%; }
+      .advantages li:not(:last-child) {
+        margin-bottom: 40px; } }
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,67 +227,7 @@ body {
   list-style: none;
   font-size: 14px;
   text-align: center; }
-  .advantages li {
-    width: 33%;
-    padding-top: 60px;
-    max-width: 200px;
-    position: relative; }
-    .advantages li:not(:nth-last-child(-n+3)) {
-      margin-bottom: 40px; }
-    .advantages li::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center; }
-    .advantages li.advantages-price::before {
-      background-image: url(../img/sections/main/advantages/price.svg);
-      width: 108px;
-      height: 19px; }
-    .advantages li.advantages-search::before {
-      background-image: url(../img/sections/main/advantages/search.svg);
-      width: 34px;
-      height: 34px; }
-    .advantages li.advantages-place::before {
-      background-image: url(../img/sections/main/advantages/place.svg);
-      width: 27px;
-      height: 38px; }
-    .advantages li.advantages-identity::before {
-      background-image: url(../img/sections/main/advantages/identity.svg);
-      width: 42px;
-      height: 42px; }
-    .advantages li.advantages-delay::before {
-      background-image: url(../img/sections/main/advantages/delay.svg);
-      width: 27px;
-      height: 41px; }
-    .advantages li.advantages-storage::before {
-      background-image: url(../img/sections/main/advantages/storage.svg);
-      width: 32px;
-      height: 32px; }
-    .advantages li.advantages-ads::before {
-      background-image: url(../img/sections/main/advantages/ads.svg);
-      width: 40px;
-      height: 30px; }
-    .advantages li.advantages-design::before {
-      background-image: url(../img/sections/main/advantages/design.svg);
-      width: 41px;
-      height: 34px; }
-    .advantages li.advantages-ready::before {
-      background-image: url(../img/sections/main/advantages/ready.svg);
-      width: 39px;
-      height: 39px; }
 
-@media screen and (max-width: 559px) {
-  .advantages li {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 45%; }
-    .advantages li:not(:last-child) {
-      margin-bottom: 40px; } }
 .section-side {
   display: -webkit-box;
   display: -ms-flexbox;
