@@ -14,6 +14,20 @@ textarea {
 button {
   border: none; }
 
+a {
+  color: #628F56; }
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black; }
+  @media screen and (max-width: 559px) {
+    h2 {
+      font-size: 26px; } }
+
 html {
   font-family: 'Tahoma', sans-serif; }
 
@@ -28,9 +42,11 @@ body {
   body .section-main {
     box-sizing: border-box; }
   body .section-side {
-    width: 33%; }
+    width: 33%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   body .section-main {
-    width: 66%; }
+    width: 100%; }
 
 @media screen and (max-width: 1023px) {
   body {
@@ -43,11 +59,14 @@ body {
       width: 100%; }
     body .section-main {
       width: 100%; } }
-.button-primary {
+.button-primary, .details .investors-plan {
+  display: inline-block;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.1em;
   background-color: #628F56;
   color: white;
@@ -108,12 +127,6 @@ body {
 .promo {
   font-size: 20px; }
   .promo h2 {
-    font-family: "Rubik", sans-serif;
-    font-size: 30px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: black;
     margin-bottom: 8px; }
   .promo form {
     margin-top: 28px;
@@ -122,7 +135,7 @@ body {
     display: flex; }
   .promo .text-input {
     width: 300px; }
-  .promo .button-primary {
+  .promo .button-primary, .promo .details .investors-plan, .details .promo .investors-plan {
     margin-left: -40px;
     position: relative;
     z-index: 1; }
@@ -132,28 +145,26 @@ body {
     margin-top: 8px; }
 
 @media screen and (max-width: 559px) {
-  .promo {
-    text-align: center; }
-    .promo form {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center;
-      background: #eee;
-      padding: 20px 0;
-      border-radius: 25px;
-      margin-top: 30px; }
-    .promo .button-primary {
-      margin-left: 0;
-      margin-top: 10px;
-      width: 90%; }
-    .promo .text-input {
-      width: 90%;
-      box-sizing: border-box; } }
+  .promo form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    background: #eee;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin-top: 30px; }
+  .promo .button-primary, .promo .details .investors-plan, .details .promo .investors-plan {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 90%; }
+  .promo .text-input {
+    width: 90%;
+    box-sizing: border-box; } }
 .advantages li {
   width: 33%;
   padding-top: 60px;
@@ -228,6 +239,40 @@ body {
   font-size: 14px;
   text-align: center; }
 
+.details p {
+  margin-top: 0.6em; }
+.details .investors-plan {
+  margin-bottom: 1em; }
+.details .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2em; }
+  .details .photos a {
+    border-radius: 8px;
+    overflow: hidden; }
+  .details .photos a:not(:last-child) {
+    margin-right: 1em; }
+  .details .photos img {
+    display: block;
+    max-width: 100%; }
+@media screen and (max-width: 559px) {
+  .details .investors-plan {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  .details .photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .details .photos a:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1em; } }
+
 .section-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,33 +325,27 @@ body {
     .section-side .about {
       margin-bottom: 60px; } }
 .section-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  padding: 5%;
-  color: #444; }
-  .section-main .advantages,
-  .section-main .promo {
+  padding: 5% 0 5% 5%;
+  color: #444;
+  overflow-y: scroll; }
+  .section-main .advantages-block,
+  .section-main .promo,
+  .section-main .details {
     max-width: 720px; }
-  .section-main .advantages {
-    margin-top: 80px; }
-
-@media screen and (max-width: 1023px) {
-  .section-main {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center; } }
-@media screen and (max-width: 559px) {
-  .section-main {
-    padding-top: 80px; } }
+  .section-main .advantages-block,
+  .section-main .details {
+    margin-top: 60px; }
+    .section-main .advantages-block h2,
+    .section-main .details h2 {
+      margin-bottom: 20px; }
+  @media screen and (max-width: 1023px) {
+    .section-main {
+      padding: 5%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+                  -ms-grid-row-align: center;
+              align-items: center; } }
+  @media screen and (max-width: 559px) {
+    .section-main {
+      padding-top: 60px;
+      padding-bottom: 60px; } }

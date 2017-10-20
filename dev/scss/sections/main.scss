@@ -1,29 +1,28 @@
 .section-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-	padding: 5%;
+	padding: 5% 0 5% 5%;
 	color: #444;
+	overflow-y: scroll;
 
-	.advantages,
-	.promo {
+	.advantages-block,
+	.promo,
+	.details {
 		max-width: 720px;
 	}
 
-	.advantages {
-		margin-top: 80px;
-	}
-}
+	.advantages-block,
+	.details {
+		margin-top: 60px;
 
-@include mq("tablet-wide", max) {
-	.section-main {
+		h2 { margin-bottom: 20px; }
+	}
+
+	@include mq("tablet-wide", max) {
+		padding: 5%;
 		align-items: center;
 	}
-}
 
-@include mq("phablet", max) {
-	.section-main {
-		padding-top: 80px;
+	@include mq("phablet", max) {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }

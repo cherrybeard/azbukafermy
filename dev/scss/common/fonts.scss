@@ -1,3 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:700&subset=cyrillic');
 
 $font-rubik: 'Rubik', sans-serif;
+
+a {
+	color: $color-green;
+}
+
+h2 {
+	font-family: $font-rubik;
+	font-size: 30px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: black;
+
+	@include mq("phablet", max) {
+		font-size: 26px;
+	}
+}

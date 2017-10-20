@@ -12,12 +12,14 @@ body {
 	.section-main {
 		box-sizing: border-box;
 	}
+	
 	.section-side {
 		width: 33%;
+		flex-shrink: 0;
 	}
 
 	.section-main {
-		width: 66%;
+		width: 100%;
 	}
 }
 

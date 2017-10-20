@@ -1,0 +1,47 @@
+.details {
+	p {
+		margin-top: 0.6em;
+	}
+
+	.investors-plan {
+		@extend .button-primary;
+		margin-bottom: 1em;
+	}
+
+	.photos {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2em;
+
+		a {
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		a:not(:last-child) {
+			margin-right: 1em;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	@include mq("phablet", max) {
+		.investors-plan {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.photos {
+			flex-direction: column;
+
+			a:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 1em;
+			}
+		}
+	}
+}

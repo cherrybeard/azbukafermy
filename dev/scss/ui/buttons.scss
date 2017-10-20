@@ -1,10 +1,13 @@
 .button-primary {
+	display: inline-block;
 	font-family: $font-rubik;
 	font-size: 16px;
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
+	text-decoration: none;
 	letter-spacing: 0.1em;
-	background-color: #628F56;
+	background-color: $color-green;
 	color: white;
 	line-height: 42px;
 	border-radius: 22px;
