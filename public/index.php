@@ -57,13 +57,13 @@
       <div class="advantages-block">
         <h2>Преимущества</h2>
         <ul class="advantages">
-          <li class="advantages-price">От 30 000 руб. в месяц за торговое место под ключ</li>
+          <li class="advantages-price">От 30 000 руб. в месяц за торговое место</li>
           <li class="advantages-search">Поиск продавца и помощь в его обучении</li>
           <li class="advantages-place">Близко от центра Москвы</li>
           <li class="advantages-identity">Фирменный стиль: фартуки, майки, бейсболки</li>
           <li class="advantages-delay">Отсрочка платежа в первый месяц</li>
           <li class="advantages-storage">Место для хранения продукции</li>
-          <li class="advantages-ads">Мощная рекламная поддержка</li>
+          <li class="advantages-ads">Сильная рекламная поддержка</li>
           <li class="advantages-design">Продуманный архитектурный дизайн</li>
           <li class="advantages-ready">Торговое пространство «под ключ»</li>
         </ul>
