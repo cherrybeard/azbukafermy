@@ -96,9 +96,9 @@ body {
   font-size: 0;
   display: block;
   width: 100%;
-  max-width: 267px;
-  padding-top: 75%;
-  background: url(../img/sections/side/logo.svg) center/contain no-repeat; }
+  max-width: 200px;
+  padding-top: 100%;
+  background: url(../img/sections/side/logo.png) center/contain no-repeat; }
 
 .countdown {
   display: -webkit-box;
