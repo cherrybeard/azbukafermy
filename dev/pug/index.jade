@@ -4,7 +4,11 @@ block variables
 	- title = "Азбука фермы"
 	- pageName = "index"
 		
+prepend head
+	include includes/ga-head.html
+		
 block content
+	include includes/ga-body.html
 	include sections/side
 	include sections/main
 		
