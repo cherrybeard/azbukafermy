@@ -1,0 +1,30 @@
+.privacy-policy {
+	margin: auto;
+	max-width: 800px;
+	padding: 3rem 2rem;
+	font-size: 1.1rem;
+	line-height: 1.4;
+
+	h1 {
+		margin-bottom: 1.5rem;
+	}
+
+	p, ul {
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	ul {
+		padding-left: 2em;
+	}
+
+	.go-back {
+		max-width: 10rem;
+		margin-bottom: 2rem;
+	}
+
+	.logo {
+		background-image: url(../img/logo/dark.png);
+	}
+}

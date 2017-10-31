@@ -1,0 +1,24 @@
+.details
+	h2 О компании
+	
+	.photos
+		mixin photo(name)
+			a(href="img/sections/main/photos/originals/#{name}.jpg", target="_blank")
+				img(src="img/sections/main/photos/preview/#{name}.jpg")
+		
+		+photo('01')
+		+photo('02')
+		+photo('03')
+		
+	.investors
+		a.investors-plan(href="img/sections/main/plan.pdf", target="_blank") Скачать план проекта
+		
+		p Инвестор проекта и управляющая компания:
+			= " "
+			a(href="http://www.blackstonekeeping.com/") BlackStone Keeping Company
+		p Проектировщик проекта:
+			= " "
+			a(href="http://www.zemskiygroup.com/") Zemskiy Group
+			
+		p.privacy-policy-link
+			a(href="privacy-policy.html") Политика конфиденциальности

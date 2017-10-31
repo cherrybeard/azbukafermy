@@ -15,15 +15,25 @@ button {
   border: none; }
 
 a {
-  color: #628F56; }
+  color: #628F56;
+  text-decoration: none;
+  border-bottom: solid 1px #628F56; }
 
-h2 {
+h1, h2 {
   font-family: "Rubik", sans-serif;
-  font-size: 30px;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: black; }
+
+h1 {
+  font-size: 3rem; }
+  @media screen and (max-width: 559px) {
+    h1 {
+      font-size: 1rem; } }
+
+h2 {
+  font-size: 30px; }
   @media screen and (max-width: 559px) {
     h2 {
       font-size: 26px; } }
@@ -31,34 +41,34 @@ h2 {
 html {
   font-family: 'Tahoma', sans-serif; }
 
-body {
+body.page-index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   height: 100vh;
   min-height: 740px; }
-  body .section-side,
-  body .section-main {
-    box-sizing: border-box; }
-  body .section-side {
-    width: 33%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0; }
-  body .section-main {
-    width: 100%; }
+body .section-side,
+body .section-main {
+  box-sizing: border-box; }
+body .section-side {
+  width: 33%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+body .section-main {
+  width: 100%; }
 
 @media screen and (max-width: 1023px) {
-  body {
+  body.page-index {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto; }
-    body .section-side {
-      width: 100%; }
-    body .section-main {
-      width: 100%; } }
+  body .section-side {
+    width: 100%; }
+  body .section-main {
+    width: 100%; } }
 .button-primary, .details .investors-plan {
   display: inline-block;
   font-family: "Rubik", sans-serif;
@@ -98,7 +108,8 @@ body {
   width: 100%;
   max-width: 200px;
   padding-top: 100%;
-  background: url(../img/sections/side/logo.png) center/contain no-repeat; }
+  background: url(../img/logo/light.png) center/contain no-repeat;
+  border-bottom: none; }
 
 .countdown {
   display: -webkit-box;
@@ -253,12 +264,16 @@ body {
   margin-bottom: 2em; }
   .details .photos a {
     border-radius: 8px;
-    overflow: hidden; }
+    overflow: hidden;
+    border-bottom: none; }
   .details .photos a:not(:last-child) {
     margin-right: 1em; }
   .details .photos img {
     display: block;
     max-width: 100%; }
+.details .privacy-policy-link {
+  font-size: 0.8rem;
+  margin-top: 3rem; }
 @media screen and (max-width: 559px) {
   .details .investors-plan {
     width: 100%;
@@ -349,3 +364,21 @@ body {
     .section-main {
       padding-top: 60px;
       padding-bottom: 60px; } }
+
+.privacy-policy {
+  margin: auto;
+  max-width: 800px;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  line-height: 1.4; }
+  .privacy-policy h1 {
+    margin-bottom: 1.5rem; }
+  .privacy-policy p:not(:last-child), .privacy-policy ul:not(:last-child) {
+    margin-bottom: 1rem; }
+  .privacy-policy ul {
+    padding-left: 2em; }
+  .privacy-policy .go-back {
+    max-width: 10rem;
+    margin-bottom: 2rem; }
+  .privacy-policy .logo {
+    background-image: url(../img/logo/dark.png); }

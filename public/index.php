@@ -12,7 +12,7 @@
 		}
 		$title = 'Заявка с заглушки Азбука Фермы #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'pavlova@blackstonekeeping.com';
+    $to = 'pavlova@blackstonekeeping.com,barmin@blackstonekeeping.com';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			"From: AzbukaFermy <hi@azbukafermy.ru>\n";
@@ -29,7 +29,7 @@
     <title>Азбука фермы</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body class="page-index">
     <div class="section-side">
       <div class="about">
         <h1 class="logo">Азбука фермы</h1>
@@ -77,6 +77,7 @@
           </p>
           <p>Проектировщик проекта: <a href="http://www.zemskiygroup.com/">Zemskiy Group</a>
           </p>
+          <p class="privacy-policy-link"><a href="privacy-policy.html">Политика конфиденциальности</a></p>
         </div>
       </div>
     </div>

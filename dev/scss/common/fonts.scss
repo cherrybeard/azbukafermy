@@ -4,17 +4,26 @@ $font-rubik: 'Rubik', sans-serif;
 
 a {
 	color: $color-green;
+	text-decoration: none;
+	border-bottom: solid 1px $color-green;
 }
 
-h2 {
+h1, h2 {
 	font-family: $font-rubik;
-	font-size: 30px;
 	line-height: 1.2;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: black;
+}
 
-	@include mq("phablet", max) {
-		font-size: 26px;
-	}
+h1 {
+	font-size: 3rem;
+
+	@include mq("phablet", max) { font-size: 1rem; }
+}
+
+h2 {
+	font-size: 30px;
+
+	@include mq("phablet", max) { font-size: 26px; }
 }
