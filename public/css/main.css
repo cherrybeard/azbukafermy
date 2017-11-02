@@ -322,6 +322,10 @@ body .section-main {
     margin-top: 20px;
     text-align: center;
     line-height: 1.5; }
+    .section-side .address a {
+      color: inherit; }
+      .section-side .address a[href^=tel] {
+        border-bottom: none; }
 
 @media screen and (max-width: 1023px) {
   .section-side {
