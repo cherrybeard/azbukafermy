@@ -3,14 +3,19 @@ block variables
 doctype html
 html(lang='ru')
 	head
-		block head
-			meta(charset='UTF-8')
-			meta(name='viewport', content='width=device-width')
-			title= title
-			
-			link(rel='stylesheet', href='css/main.css')
+		unless isStatic
+				include includes/ga-head.html
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width')
+		title= title
+		
+		link(rel='stylesheet', href='css/main.css')
 		
 	body(class= pageName ? "page-#{pageName}" : "")
+		unless isStatic
+			include includes/ga-body.html
 		block content
 		
-		block scripts
+		unless isStatic
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+			script(src="js/main.js")
