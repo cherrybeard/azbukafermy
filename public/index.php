@@ -12,7 +12,7 @@
 		}
 		$title = 'Заявка с заглушки Азбука Фермы #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'pavlova@blackstonekeeping.com,barmin@blackstonekeeping.com';
+    $to = 'pavlova@blackstonekeeping.com,mamonova@blackstonekeeping.com';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			"From: AzbukaFermy <hi@azbukafermy.ru>\n";
